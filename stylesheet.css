@@ -7,8 +7,8 @@ h1 {
     font-family: "Slackey";
     color: white;
     text-shadow: 3px 3px 3px black;
-    -webkit-text-stroke: .9px black;
-    font-size: 50px;
+    -webkit-text-stroke: 1.7px black;
+    font-size: 70px;
     margin: 0;
 }
 
@@ -34,9 +34,64 @@ h1 {
     0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
+.musiclist {
+    /* background-image: linear-gradient(to bottom, #0f0031, #3b3b3b); */
+    background-color:rgba(0, 0, 0, 0.35);
+    box-shadow: 
+    /* Soft top white inner shadow (reduced opacity for smooth glow) */
+    inset 0 4px 10px rgba(255, 255, 255, 0.22),
+    
+    /* Dark bottom inner shadow for depth */
+    inset 0 -2px 5px rgba(0, 0, 0, 0.45),
+    
+    /* Drop shadow onto dark background canvas */
+    0 4px 12px rgba(0, 0, 0, 0.35);
+    width: 400px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.playlistHeader {
+    width: 400px;
+    background-image: linear-gradient(to bottom, #2253f5, #00ffea);
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    gap: 15px;
+    box-shadow: 
+    /* Soft top white inner shadow (reduced opacity for smooth glow) */
+    inset 0 4px 10px rgba(255, 255, 255, 0.22),
+    
+    /* Dark bottom inner shadow for depth */
+    inset 0 -2px 5px rgba(0, 0, 0, 0.45),
+    
+    /* Drop shadow onto dark background canvas */
+    0 4px 12px rgba(0, 0, 0, 0.35);
+
+}
+
+h3 {
+    font-family: "Slackey";
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    -webkit-text-stroke: 1px black;
+    font-size: 35px;
+    margin: 0;    
+}
+
+h2 {
+    font-family: "Slackey";
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    -webkit-text-stroke: 1.4px black;
+    font-size: 50px;
+    margin: 0;    
+}
+
 .musicNote {
     height: auto;
-    width: 50px;
+    width: 70px;
 }
 
 .gelasio {
