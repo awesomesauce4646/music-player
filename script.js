@@ -1,22 +1,28 @@
+var moonSong = document.getElementById("moonSong");
+var armedSong = document.getElementById("armedSong");
+
+
 function playMoonMusic() {
-    var song = document.getElementById("moonSong");
     
-    if (song.paused) {
-        song.play();
+    if (moonSong.paused) {
+        moonSong.play();
+        armedSong.pause();
+        armedSong.currentTime = 0;
     } else {
-        song.pause();
+        moonSong.pause();
     }
 }
 
-function playMagnetMusic() {
-    var song = document.getElementById("magnetSong");
+function playArmedMusic() {
     
-    if (song.paused) {
-        song.play();
+    if (armedSong.paused) {
+        armedSong.play();
+        moonSong.pause();
+        moonSong.currentTime = 0;
     } else {
-        song.pause();
+        armedSong.pause();
     }
 }
 
 window.playMoonMusic = playMoonMusic;
-window.playMagnetMusic = playMagnetMusic;
+window.playArmedMusic = playArmedMusic;

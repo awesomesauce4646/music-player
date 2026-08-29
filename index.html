@@ -18,14 +18,20 @@
     </div>
     <div>
       <h2 class = "playlistHeader">Songs</h2>
-        <div class="musiclist">
-            <audio id="moonSong" src="songs/On The Moon.mp3"></audio>
-            <audio id="magnetSong" src="songs/Magnet.mp3"></audio>
+      <div class="musiclist">
+          <audio id="moonSong" src="songs/onthemoon.mp3"></audio>
+          <audio id="armedSong" src="songs/armedandready.mp3"></audio>
 
-            <button onclick="playMoonMusic()">moon</button>
-            <button onclick="playMagnetMusic()">magnet</button>
+          <div class="song-row">
+              <img src="images/moon.jpg" class="song-icon">
+              <button onclick="playMoonMusic()">PLAY</button>
+          </div>
 
-        </div>
+          <div class="song-row">
+              <img src="images/rwby.webp" class="song-icon">
+              <button onclick="playArmedMusic()">PLAY</button>
+          </div>
+      </div>
       </div>
   </body>
 </html>
