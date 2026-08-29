@@ -141,13 +141,14 @@ button {
     margin-bottom: 20px;
 }
 
-button:active {
-    background-image: linear-gradient(to bottom, #a380fb, #bf00ff);
-}
-
 .song-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, #006335, #02a86b);
+    color: rgb(196, 194, 194);
 }
