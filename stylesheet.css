@@ -48,7 +48,6 @@ h1 {
     0 4px 12px rgba(0, 0, 0, 0.35);
     width: 400px;
     padding: 10px;
-    margin-left: 50px;
     height: 480px;
 
 }
@@ -58,7 +57,6 @@ h1 {
     background-image: linear-gradient(to bottom, #2253f5, #00ffea);
     padding: 10px;
     margin-top: 50px;
-    margin-left: 50px;
     text-align: center;
     gap: 15px;
     box-shadow: 
@@ -88,7 +86,6 @@ h1 {
     0 4px 12px rgba(0, 0, 0, 0.35);
     width: 400px;
     padding: 10px;
-    margin-left: 584px;
     height: 480px;
 
 }
@@ -98,7 +95,6 @@ h1 {
     background-image: linear-gradient(to bottom, #2de020, #00ff7b);
     padding: 10px;
     margin-top: 50px;
-    margin-left: 584px;
     text-align: center;
     gap: 15px;
     box-shadow: 
@@ -213,6 +209,8 @@ button:hover {
 
 #ui {
     display: flex;
+    justify-content: space-between;
+    padding: 0 50px; /* equal space reserved on left and right edges */
 }
 
 .remove {
