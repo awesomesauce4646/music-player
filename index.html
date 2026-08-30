@@ -11,39 +11,52 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class = "header">
-        <img src = "images/musicnote.png" alt = "music note" class = "musicNote">
-
-        <h1>TunesPlayer</h1>  
+    <div class="header">
+        <img src="images/musicnote.png" alt="music note" class="musicNote">
+        <h1>TunesPlayer</h1>
     </div>
-    <div>
-      <h2 class = "playlistHeader">Songs</h2>
-      <div class="musiclist">
-          <audio id="moonSong" src="songs/onthemoon.mp3"></audio>
-          <audio id="armedSong" src="songs/armedandready.mp3"></audio>
 
-          <div class="song-row">
-              <img src="images/moon.jpg" class="song-icon">
-              <div class = "song-info">
-                <div>
-                  <h3>On The Moon by:</h3>
-                  <h3>Chromaa ft. MIGURIMA</h3>
+    <div id="ui">
+      <div>
+        <h2 class="musicListHeader">Songs</h2>
+        <div class="musiclist">
+            <audio id="moonSong" src="songs/onthemoon.mp3"></audio>
+            <audio id="armedSong" src="songs/armedandready.mp3"></audio>
+
+            <div class="song-row">
+                <img src="images/moon.jpg" class="song-icon">
+                <div class="song-info">
+                    <div>
+                        <h3>On The Moon by:</h3>
+                        <h3>Chromaa ft. MIGURIMA</h3>
+                    </div>
+                    <div>
+                        <button onclick="playMoonMusic()" class = "moonPlayBtn">PLAY</button>
+                        <button onclick="addToPlaylist(this)" class="add">ADD</button>
+                    </div>
                 </div>
-              <button onclick="playMoonMusic()">PLAY</button>
-          </div>
+            </div>
+
+            <div class="song-row">
+                <img src="images/rwby.webp" class="song-icon">
+                <div class="song-info">
+                    <div>
+                        <h3>Armed and Ready by:</h3>
+                        <h3>Jeff Williams ft. Casey Lee Williams</h3>
+                    </div>
+                    <div>
+                        <button onclick="playArmedMusic()" class = "armedPlayBtn">PLAY</button>
+                        <button onclick="addToPlaylist(this)" class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
         </div>
-          <div class="song-row">
-              <img src="images/rwby.webp" class="song-icon">
-              <div class="song-info">
-                <div>
-                  <h3>Armed and Ready by:</h3>
-                  <h3>Jeff Williams ft. Casey Lee Williams</h3>
-                </div>
+      </div>
 
-                <button onclick="playArmedMusic()">PLAY</button>
-              </div>
-          </div>
+      <div>
+        <h2 class="playlistHeader">Playlist</h2>
+        <div class="playlist"></div>
       </div>
-      </div>
+    </div>
   </body>
 </html>
