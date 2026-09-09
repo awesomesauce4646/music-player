@@ -23,7 +23,7 @@ var songInfo = {
     },
     otherSide: {
         text: "The Player on The Other Side — Honkai: Star Rail 2.0 OST",
-        img: "images/otherSide.webp",
+        img: "images/otherside.webp",
         audio: document.getElementById("otherSideSong"),
         btnClass: ".otherSidePlayBtn"
     }
