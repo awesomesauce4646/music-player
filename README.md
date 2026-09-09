@@ -1,6 +1,6 @@
 # TunesPlayer
 A music player that has a small library of songs that I like!
-
+![image of the music player](image.png)
 ## Features
 
 4 Songs! Such as:
