@@ -22,8 +22,11 @@
         <div class="musiclist">
             <audio id="moonSong" src="songs/onthemoon.mp3"></audio>
             <audio id="armedSong" src="songs/armedandready.mp3"></audio>
+            <audio id="heavenSong" src="songs/heavensays.mp3"></audio>
+            <audio id="otherSideSong" src="songs/otherSide.mp3"></audio>
 
-            <div class="song-row">
+
+            <div class="song-row" data-song="moon">
                 <img src="images/moon.jpg" class="song-icon">
                 <div class="song-info">
                     <div>
@@ -37,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="song-row">
+            <div class="song-row" data-song="armed">
                 <img src="images/rwby.webp" class="song-icon">
                 <div class="song-info">
                     <div>
@@ -50,9 +53,50 @@
                     </div>
                 </div>
             </div>
+
+            <div class="song-row" data-song="heaven">
+                <img src="images/heavensays.jpg" class="song-icon">
+                <div class="song-info">
+                    <div>
+                        <h3>HEAVEN SAYS by:</h3>
+                        <h3>chart</h3>
+                    </div>
+                    <div>
+                        <button onclick="playHeavenMusic()" class = "heavenPlayBtn">PLAY</button>
+                        <button onclick="addToPlaylist(this)" class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="song-row" data-song="otherSide">
+                <img src="images/otherSide.jpg" class="song-icon">
+                <div class="song-info">
+                    <div>
+                        <h3>The Player on The Other Side by:</h3>
+                        <h3>Honkai: Star Rail 2.0 OST</h3>
+                    </div>
+                    <div>
+                        <button onclick="playOtherSideMusic()" class = "otherSidePlayBtn">PLAY</button>
+                        <button onclick="addToPlaylist(this)" class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
       </div>
-
+      <div>
+        <div class="now-playing-column">
+    <div class="now-playing" id="nowPlaying">
+        <img id="nowPlayingImg" class="now-playing-img" src="" alt="" style="display:none;">
+        <h3 id="nowPlayingText">Nothing playing :(</h3>
+    </div>
+    <div class="volume-control">
+        <label for="volumeSlider">Volume:</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+        <button id="skipBtn" onclick="skipCurrentSong()" class="skip">SKIP</button>
+    </div>
+</div>
+</div>
       <div>
         <h2 class="playlistHeader">Playlist</h2>
         <div class="playlist"></div>
