@@ -8,7 +8,7 @@ A music player that has a small library of songs that I like!
 - HEAVEN SAYS by chart
 - The Player on The Other Side by Honkai: Star Rail 2.0 OST
 - On The Moon by Chromaa ft. MIGURIMA
-- Armed and Ready by: Jeff Williams ft. Casey Lee Williams
+- Armed and Ready by Jeff Williams ft. Casey Lee Williams
 
 ### Settings:
 
